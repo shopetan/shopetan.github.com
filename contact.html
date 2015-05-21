@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <!-- cssのfileを別で用意するための方法 -->
+  <!-- directoryはindex.htmlの位置から指定する． -->
+  <!-- 次からは外部ファイル化してやってください -->
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+  window.onload = function () {
+    var btn = document.querySelector(".nav_btn");
+    var body = document.querySelector("body");
+    btn.addEventListener("click", clicked);
+    function clicked () {
+      if(body.className==="") {
+        body.className = "open"
+      }else{
+      body.className = ""
+      }
+    }
+  }
+  </script>
+
+</head>
+
+<body>
+
+    <header>
+      <div class="nav_btn">
+        <link href="font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
+      <i class="fa fa-2x fa-fw fa-bars"></i>
+      </div>
+    </header>
+
+      <nav class="global">
+        <ul>
+          <li><a href="index.html">top</a></li>
+          <li><a href="profile.html">profile</a></li>
+          <li><a href="http://shopetan.hatenablog.com/">blog</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+
+  <div class="top">
+    <h1 class="toptitle">Contact</h1>
+      <div class="link">
+        <ul>
+          <li><a href="https://twitter.com/ss_shopetan" class="contact"><i class="fa fa-5x fa-fw fa-twitter"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCLSpqMQBptRAq0-518x7shw" class="contact"><i class="fa fa-5x fa-fw fa-youtube"></i></a></li>
+          <li><a href="https://github.com/shopetan" class="contact"><i class="fa fa-5x fa-fw fa-github"></i></a></li>
+          <li><a href="http://ask.fm/ss_shopetan" class="contact"><i class="fa fa-5x fa-fw fa-comment-o"></i></a></li>
+        </ul>
+      </div>
+  </div>
+
+</body>
+</html>

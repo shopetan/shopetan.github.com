@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top Page</title>
+  <!-- cssのfileを別で用意するための方法 -->
+  <!-- directoryはindex.htmlの位置から指定する． -->
+  <!-- 次からは外部ファイル化してやってください -->
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+  window.onload = function () {
+    var btn = document.querySelector(".nav_btn");
+    var body = document.querySelector("body");
+    btn.addEventListener("click", clicked);
+    function clicked () {
+      if(body.className==="") {
+        body.className = "open"
+      }else{
+      body.className = ""
+      }
+    }
+  }
+  </script>
+
+</head>
+<body>
+
+    <header>
+      <div class="nav_btn">メニュー</div>
+    </header>
+
+    <nav class="global">
+      <ul>
+        <li><a href="index.html">top</a></li>
+        <li><a href="profile.html">profile</a></li>
+        <li><a href="http://shopetan.hatenablog.com/">blog</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+
+  <div class="top">
+    <h1 class="toptitle">Codependence</h1>
+    <h2 class="description">forever, even if dead is two people.</h2>
+  </div>
+
+</body>
+</html>
